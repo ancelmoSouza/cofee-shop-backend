@@ -1,0 +1,2 @@
+Install fastify + cors
+    ---> npm install fastify @fastify/cors

@@ -1,0 +1,2 @@
+-------> Instalar o tsx para rodar os arquivos Typescript
+    npm install tsx
