@@ -4,11 +4,15 @@ import {
   FastifyRequest,
   FastifyReply
 } from 'fastify';
-import { CreateUserController } from '../controllers/User/CreateUsercontroller';
-import { GetAllUserController } from '../controllers/User/GetAllUsercontroller';
+import { CreateUserController } from '../controllers/User/CreateUserController';
+import { GetAllUserController } from '../controllers/User/GetAllUserController';
 import { DeleteUserController } from '../controllers/User/DeleteUserController';
 
 export async function routes(fastify: FastifyInstance, options: FastifyPluginOptions) {
+
+
+
+
   fastify.post("/user", async (request: FastifyRequest, reply: FastifyReply) => {
     return new CreateUserController().hundler(request, reply);
   })

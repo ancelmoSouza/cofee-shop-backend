@@ -1,4 +1,4 @@
-import prismaClient from "../../models/PrismaClient";
+import prismaClient from "../../models/PrismaClient/index";
 
 class GetAllUserService {
   async execute() {
