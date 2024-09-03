@@ -1,5 +1,19 @@
+# POST http://localhost:3333/user
+# Content-Type: application/json
+
+# {
+#   "name": "Junior Perseguidor de Lolis",
+#   "email": "jr_perseguidor_de_lolis@cadeianele.com",
+#   "password": "1235"
+# }
+
 # POST http://localhost:3333/login
 # Content-Type: application/json
 
+# {
+#   "email": "jr_perseguidor_de_lolis@cadeianele.com",
+#   "password": "1235"
+# }
+
+
 GET http://localhost:3333/user HTTP/1.1
-X-Api-Key: super-secret

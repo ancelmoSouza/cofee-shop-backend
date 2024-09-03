@@ -1,4 +1,11 @@
 import 'fastify';
+import { JWT } from '@fastify/jwt';
+
+declare module 'fastify' {
+  interface FastifyInstance {
+    jwt: JWT
+  }
+}
 interface User {
   email: string;
   password: string;
@@ -29,5 +36,5 @@ declare module 'fastify' {
 export {
   CreateUserInput,
   VerifyPasswordInput,
-  DeleteInput
+  DeleteInput,
 }
